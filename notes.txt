@@ -9,8 +9,38 @@ git add <file> : add file to index/staging area
 git add *.html : add all html files
 git add . : add everything
 git status : what you have in staging area
+
 git commit : commit changes in index
-git push : local to remote repo(e.g. bitbucket, github)
+either:
+i) git commit
+	a vim editor opens
+	add your comment there
+or:
+ii) git commit -m 'add your comments here'
+
+
+git push : from local to remote repo(e.g. bitbucket, github)
+git push -u origin master : ??
+
 git pull : pull latest from remote repo
 git clone : clone a repo in a new directory
 git rm --cached index.html: to remove from staging area
+
+git ignore: if you do not want something to be included add it in .gitignore
+
+we usually do not want to include log files
+here *.extension withdraws all the .extension files 
+
+git branch name_of_the_branch:	just adds the branch,
+								it does not switch the branch
+
+git checkout name_of_the_branch: to switch the branch from whatever we are currently working on to name_of_the_branch
+
+when we change branches, only those files are visible which belongs to that branch others simply vanish
+
+git merge branch_name : this merges the branch to the branch that we are currently working on.
+e.g.
+if we write the above command in the master branch then new branch belongs to master
+
+git remote : list the remote repository
+git remote add origin url: adds the remote repository
